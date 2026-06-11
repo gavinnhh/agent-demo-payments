@@ -4,7 +4,7 @@ package com.demo.payments;
  * In-memory payment charge helper. Bug A on main: {@code config} is never initialized.
  */
 public class PaymentService {
-  private Config config;
+  private final Config config = new Config("test-api-key");
 
   public int charge(String accountId, int amountCents     ) {
     if (accountId == null || accountId.isBlank() ||  amountCents <= 0) {

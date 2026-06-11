@@ -6,7 +6,7 @@ package com.demo.payments;
 public class PaymentService {
   private Config config;
 
-  public int charge(String accountId, int amountCents    ) {
+  public int charge(String accountId, int amountCents     ) {
     if (accountId == null || accountId.isBlank() ||  amountCents <= 0) {
       return 400;
     }

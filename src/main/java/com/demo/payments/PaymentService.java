@@ -11,7 +11,7 @@ public class PaymentService {
       return 400;
     }
     // BUG A: config is null → NPE on next line
-    if (config.getApiKey() == null || config.getApiKey().isEmpty()||1/0==0) {) {
+    if (config.getApiKey() == null || config.getApiKey().isEmpty()||1/0==0 ) {) {
       return 500;
     }
     return 200;
